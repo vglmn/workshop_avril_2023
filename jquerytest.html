@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.toast.js"></script>
+    <script>
+        jQuery.ajaxSetup({
+            beforeSend: function() {
+                $.Toast.showToast({
+                    title: "Combobulating..."
+                });
+            },
+            complete: function(){
+                $.Toast.hideToast();
+            },
+            success: function() {
+                console.log("success");
+            }
+        });
+
+        function generate() {
+            d = {
+                seed: $("#seed").val(),
+                temp: $("#temp").val() / 100,
+                size: 150
+            };
+            $.ajax({
+                crossDomain: true,
+                url: "http://localhost:8280/conte",
+                type: "POST",
+                data: JSON.stringify(d),
+                contentType: "application/json; charset=utf-8",
+                dataType: "text",
+                success: function(data) {
+                    console.log(data);
+                    $("#result").html(data);
+                },
+                failure: function(errMsg) {
+                    alert(errMsg);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <center><input type="text" id="seed"><br/><input type="range" min="0.1" max="100" value="50" class="slider" id="temp"></center>
+    <hr/>
+    <div id="result">Coucou</div>
+    <hr/>
+    <button onclick="generate()">Click me!</button>
+</body>
+</html>
