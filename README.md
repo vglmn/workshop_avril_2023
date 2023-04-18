@@ -1,3 +1,7 @@
+# Kitchenbrain 
+
+Bienvenue ! Pour utiliser ce produit vous devez taper le produit que vous voulez utiliser dans votre recette. Une fois l'ingrédient trouvé il vous remontera des possibilités de recette. Evidemment l'idéal est de mettre plusieurs ingrédients afin d'avoir un maximum de choix. Une fois vos propositions affichées vous avez juste a cliquer sur la recette qui vous intéresse pour avoir un prompt de votre recette. 
+
 # SimpleML
 
 Projet simple de generation de séquences.

@@ -1,0 +1,191 @@
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-input {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: black;
+}
+
+.form-input-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-input-submit:hover {
+    background-color: #0056b3;
+}
+
+.card-container {
+    display: none; 
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.cards {
+    display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    
+.header {
+    text-align: left;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.historique-container {
+    display: flex;
+    width: 100%;
+}
+
+.historique {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+  .historique-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+  .historique-text {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+  .thumbnail-list {
+    display: flex; 
+    overflow-x: auto;
+    white-space: nowrap; 
+}
+
+.thumbnail {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    flex-shrink: 0; 
+    width: 102px; 
+    height: 40px; 
+    margin-right: 10px; 
+    background-color: #ccc;
+    cursor: pointer; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.thumbnail.selected {
+    border: 2px solid #cfc; 
+}
+
+.rounded-input {
+    width: 80%;
+    padding: 10px; 
+    border: none; 
+    border-radius: 20px;
+}
+
+.recettes-container {
+    display: none;
+}
+
+.recette {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recette-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recette-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+
+#inputField {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+  
+#inputField:focus {
+    border-color: #5e9bff;
+    outline: none;
+}
